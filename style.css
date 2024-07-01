@@ -1,21 +1,16 @@
-section:nth-of-type(1){
-    color:purple;
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
 }
-section p:first-child{
-    font-weight: 70px;
-}
-section {
-    /* လိုင်းအပြည့် */
-    display: grid;
-    font-size: 42px;
-    padding: 10px;
-    width: auto;
-    border: 8px solid greenyellow;
-    border-radius: 5px;
-}
-table {
-    border-collapse: collapse;
-}
-th,td {
-    border: 3px solid skyblue;
-}
+
+.flex-container>div {
+    width: 200px;
+    height: 100px;
+    padding: 60px;
+    margin: 5px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 75px;
+    background: skyblue;
+    flex-direction: column;
+} 
