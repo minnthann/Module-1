@@ -16,6 +16,7 @@ main {
 
 .main-header {
     display: flex;
+    flex-flow: wrap;
     justify-content: space-between;
     padding: 60px;
     background: #13293d;
@@ -41,9 +42,9 @@ main {
     width: 100%;
     min-width: 400px;
 }
-/* 
-@main screen and (max-width: 320px) {
-    .main-header {
+
+/* @main screen and (max-width: 320px) {
+    .main-header{
         flex-dirextion:column;
     }
 } */

@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+  
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column;
+}
+.box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+  
+#two {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: blue;
+}

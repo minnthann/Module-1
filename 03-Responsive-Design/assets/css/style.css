@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    margin: 0;
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+}
+/* 
+What happens when we set the dispay ptoperty to flexf? 
+Todo: write your answer here */
+
+nav {
+    display: flex;
+    background-color: #d8a47f;
+}
+
+nav a {
+    color: #13293d;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+/* 
+what is the flex-wrap property?
+todo: write your answer here */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+aside {
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 80px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+}
+
+/* what does the justify-content property do?
+todo write your answer here */
+
+.products {
+    flex: 4;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 
+What is the flex property a shorthand property for?
+What is it doing here? 
+TODO: Write your answer here 
+*/
+.card {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 10px;
+    flex: 0 0 400px;
+}
+
+.card header {
+    padding: 20px;
+}
+
+.card p {
+    text-align: center;
+}
+.card img {
+    width: 100%;
+}
+/* 
+What does the flex-direction property define?
+What is it doing here? 
+TODO: Write your answer here 
+*/
+
+@media screen and (max-width: 768px) { 
+    min,
+    nav {
+        flex-direction: column;
+    }
+}

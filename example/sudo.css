@@ -1,0 +1,68 @@
+.its {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* row-gap: 20px; */
+    /* column-gap: 50px; */
+    /* gap: 5%; */
+    /* justify-content: space-around; */
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+
+}
+.one {
+    border: 1px dotted purple;
+    background-color: beige;
+    color: darkblue;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.tow {
+    border: 1px dotted purple;
+    background-color: beige;
+    color: darkblue;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.three {
+    border: 1px dotted purple;
+    background-color: beige;
+    color: darkblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.four {
+    border: 1px dotted purple;
+    background-color: beige;
+    color: darkblue;
+    padding: 20px;
+    border-radius: 5px;
+}
+/* @media screen (max-width: 760px) {
+    main,
+    nav {
+    flex-direction: column:
+    }
+}
+
+@media screen (min-width: 760px)  and (max-width: 950px){
+    main,
+    nav {
+    }
+}
+
+@media (min-width: 951px) {
+
+} */
+
+/* တယ်လီဖုန်းဆို ကောလံ
+လက်တော့ဆို ရိုး 
+
+*/

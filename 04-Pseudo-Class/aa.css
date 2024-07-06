@@ -1,0 +1,29 @@
+/* ဘာတိရေဘယ်ကျေငြာဖို့  */
+:root {
+--primary-color: 
+}
+
+
+* {
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 3px;
+/* width: 80%; */
+}
+
+body {
+    margin: 20 auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: 80%;
+}
+
+.btn {
+    border-radius: 30px;
+    border: 5px solid red;
+    padding: 10px 20px;
+    background-color: blue;
+    text-decoration: none;
+    color: aqua;
+    text-align: center;
+}
