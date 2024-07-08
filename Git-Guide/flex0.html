@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        background-color: black;
+        margin: 30px;
+    }
+    div {
+        margin-bottom: 15px;
+        padding: 15px 12px; /* Increased padding to center align text vertically with icon */
+        position: relative;
+    }
+    .danger {
+        background-color: #FFDDDD;
+        border-left: 6px solid #F44336;
+    }
+    .success {
+        background-color: #DDFFDD;
+        border-left: 6px solid #04AA6D;
+    }
+    .info {
+        background-color: #E7F3FE;
+        border-left: 6px solid #2196F3;
+    }
+    .warning {
+        background-color: #FFFFCC;
+        border-left: 6px solid #FFEB3B;
+    }
+    .icon {
+        position: absolute;
+        left: -20px; /* Adjust to place icon on the border */
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        width: 30px; /* Adjusted width to fit the background */
+        height: 30px; /* Adjusted height to fit the background */
+        background-color: #FFFFFF; /* Default icon background color */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+<h2>Notes</h2>
+<div class="danger">
+    <i class="fas fa-exclamation-circle icon" style="color: #F44336;"></i>
+    <p><strong>Danger!</strong> Some text...</p>
+</div>
+<div class="success">
+    <i class="fas fa-check-circle icon" style="color: #04AA6D;"></i>
+    <p><strong>Success!</strong> Some text...</p>
+</div>
+<div class="info">
+    <i class="fas fa-info-circle icon" style="color: #2196F3;"></i>
+    <p><strong>Info!</strong> Some text...</p>
+</div>
+</body>
+</html>
