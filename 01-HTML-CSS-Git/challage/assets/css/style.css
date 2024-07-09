@@ -1,0 +1,124 @@
+:root {
+    --primary-color: yellow;
+    --primary-hover: blue;
+    --button-bg-color: red;
+    --button-bg-hover: black;
+}
+main  {
+    width: 90%;
+    margin: auto;
+    background-color: #f18585;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    /* margin-left: 0 auto;
+    margin-right: 0 auto; */
+}
+
+.nav-item:first-child {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.nav-item {
+    list-style: none;
+
+}
+
+.nav-item a {
+    color: blue;
+    text-decoration: none;
+}
+.nav-item a:hover {
+    color: yellow;
+}
+
+.btn {
+    background-color: rgb(214, 201, 17);
+    border: none;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.para-text {
+    width: 350px;
+    border-left: 2px solid red;
+    padding-left: 10px;
+    border: 1px solid green;
+}
+
+p:nth-child(odd) {
+    background-color: hsl(175, 82%, 49%);
+    padding: 10px;
+    border: 1px solid green;
+}
+
+p:nth-child(even) {
+    background-color: #e0d96f;
+    padding: 10px;
+
+}
+
+
+.btn:hover{
+    color: aquamarine;
+}
+
+.bg {
+    background-image: url(/01-HTML-CSS-Git/challage/assets/image/digital-marketing-meeting.jpg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 75%;
+    display: inline-block;
+    color: aliceblue;
+    background-color: blueviolet;
+}
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.content img {
+    max-height: 200px;
+
+}
+
+/* 2section */
+.bns {
+    background-color: blueviolet;
+    width: 18%;
+    padding: 20px;
+}
+.bns img {
+    max-width: 150px;
+    display: block;
+}
+
+@media screen and (max-width: 485px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .nav-item:first-child {
+        /* margin: auto; */
+    }
+}
