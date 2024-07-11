@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(110, 110, 185);
+    padding: 20px;
+    display: flow-root;
+}
+header h1 span {
+    color: black;
+}
+header h1{
+    font-size: 40px;
+    display: inline-block;
+}
+header a {
+    color:wheat;
+    text-decoration: none;
+}
+header nav {
+    float: right;
+    margin: 15px 0;
+}
+header nav ul li{
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 20px;
+}
+
+.firght {
+    background-image: url(digital-marketing-meeting.jpg);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    background-position: 80%;
+    /* margin-bottom: 30px; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-attachment: fixed;
+    align-items: flex-start;
+}
+.float-left {
+    float: left;
+    margin-right: 30px;
+}
+.float-right {
+    float: right;
+    margin-right: 30px;
+}
+.content {
+    width: 75%;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.Engine img{
+    max-height: 200px;
+    margin-right: 25px;
+}
+.Engine {
+    background-color: blueviolet;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 20px;
+    width: auto;
+    margin-left: 40px;
+    display: inline-block;
+    flex: 1;
+
+}
+.Reputation img {
+    max-height: 200px;
+}
+
+.Reputation {
+    background-color: blueviolet;
+    margin-bottom: 20px ;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 20px;
+    width: auto;
+    margin-left: 40px;
+    display: inline-block;
+    flex: 1;
+}
+
+.Media img {
+    max-height: 200px;
+}
+.Media{
+    background-color: blueviolet;
+    height: auto;
+    padding: 50px;
+    margin-bottom: 20px;
+    width: auto;
+    margin-left: 40px;
+    display: inline-block;
+    flex: 1;
+}
+.Generation img{
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+.Generation{
+    margin-bottom: 30px;
+}
+.brand img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+.brand {
+    margin-bottom: 30px;
+}
+.Management img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
+}
+.Management {
+    margin-bottom: 30px;
+}
+.brands {
+    margin-right: 20px;
+    padding: 20px;
+    background-color: blueviolet;
+    width: 18%;
+    /* height: 100%; */
+    float: right;
+    /* color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+.brands h2 {
+    text-align: center;
+}
+footer{
+    text-align: center;
+    height: 100px;
+    margin-top: 30px;
+    clear: both;
+}
+
+/* @media (min-width: 487px) {
+    header,
+    .content,
+    .brands, img {
+        flex-direction: column;
+        text-align: center;
+    }
+} */
+/* 
+@media (min-width: 700px) {
+    .content img{
+        height: 100px;
+    }
+}
+
+@media (min-width: 120px) {
+    .content img {
+        height: 300px;
+    }
+}  */
