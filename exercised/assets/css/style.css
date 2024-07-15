@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5% auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #777;
+}
+
+.container {
+    display: inline-block;
+    margin: 20px;
+}
+.gradient {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 9px #333;
+}
+
+.linear {
+    background: linear-gradient(200deg, rgba(238, 214, 211, 0. 8), transparent),
+    linear-gradient(100deg, rgba(152, 215, 194, 1), transparent),
+    linear-gradient(300deg, rgba(253, 183, 80, 1),
+    transparent);
+}
+
+.radial {
+    background: radial-gradient(
+        circle at center,
+        rgba(238, 214, 211, 0.9),
+        transparent
+    ),
+    radial-gradient(circle at bottom, rgba(152, 215, 194, 0.8), transparent),
+    radial-gradient(circle at top, rgba(253, 183, 80, 0.8),
+    transparent);
+}
+.photo-gradient {
+    background: linear-gradient( to right, rgb(227, 284, 180), transparent),
+    url() no-repeat center;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.conic.gradient {
+    height: 150px;
+    width: 150px;
+    background-image: repeating-conic-gradient() (
+        rgba(128, 0, 0, 0.782) 0deg 15deg,
+        gold 15deg 30deg,
+        rgb(245, 242, 242) 30deg 45deg,
+        rgba(255, 0, 0, 0.832) 45deg 60deg,
+        rgb(255, 255, 255) 60deg 75deg,
+        gray 75deg 90deg
+    );
+    box-shadow: 0px 2px 9px gray;
+    border-radius: 50%;
+    position: relative;
+     &:before {
+        content: "24";
+        font-size: 12px;
+        text-align: center;
+        color: whitesmoke;
+        width: 15px;
+        height: 15px;
+        padding: 10px;
+        border-radius: 50%;
+        background: radial-gradient(circle at center, red, transparent),
+            radial-gradient(circle at bottom, gray, transparent),
+            radial-gradient(circle at top, yellow, transparent);
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        box-shadow: 0px 0px 1px #333;
+     }
+}
