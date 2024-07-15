@@ -22,10 +22,13 @@ body {
 }
 
 .linear {
-    background: linear-gradient(200deg, rgba(238, 214, 211, 0. 8), transparent),
+    background: linear-gradient(200deg, rgba(238, 214, 211, 0.8), transparent),
+    linear-gradient(100deg, rgba(152, 215, 194, 1), transparent),
+    linear-gradient(300deg, rgba(253, 183, 80, 1), transparent);
+    /* background: linear-gradient(200deg, rgba(238, 214, 211, 0. 8), transparent),
     linear-gradient(100deg, rgba(152, 215, 194, 1), transparent),
     linear-gradient(300deg, rgba(253, 183, 80, 1),
-    transparent);
+    transparent); */
 }
 
 .radial {
@@ -40,15 +43,15 @@ body {
 }
 .photo-gradient {
     background: linear-gradient( to right, rgb(227, 284, 180), transparent),
-    url() no-repeat center;
+    url(../image/1714306993954.jpg) no-repeat center;
     object-fit: cover;
     background-size: cover;
 }
 
-.conic.gradient {
+.conic-gradient {
     height: 150px;
     width: 150px;
-    background-image: repeating-conic-gradient() (
+    background-image: repeating-conic-gradient(
         rgba(128, 0, 0, 0.782) 0deg 15deg,
         gold 15deg 30deg,
         rgb(245, 242, 242) 30deg 45deg,
@@ -77,3 +80,51 @@ body {
         box-shadow: 0px 0px 1px #333;
      }
 }
+
+.border-gradient {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+
+    border: double 5px transparent;
+    background-image: linear-gradient(white, white),
+        linear-gradient(90deg, #833ab4, #fd1d1d, #fab045);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.divs {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+}
+.div1-gradient {
+    background: linear-gradient(orange 50%, green 50%);
+}
+.div2-gradient1 {
+    background: repeating-radial-gradient(
+        orange 0px 37.5px, slategrey 37.5px 75px
+    );
+}
+
+.div2-gradient {
+    background: repeating-linear-gradient(
+        orange 0px 37.5px, slategrey 37.5px 75px
+    );
+}
+
+.div3-gradient {
+        background: linear-gradient(to left, violet 25%, yellowgreen 25% 50%, grey 50% 75%, skyblue 75%);
+}
+.div4-gradient {
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, rgba(255, 217, 0, 0.855) 50%, rgba(247, 5, 5, 0.745) 50%);
+}
+
+/* rose:rgba (238, 214, 211, 1) */
+/* spearmint: rgba(152, 215, 194, 1) */
+/* amber: rgba (253, 183, 80, 1 */
+
+/* ဒီဇိုင်းနာ လေ့လာရန် */
+/* https://www.canva.com/colors/color-palette-generator/ */
+/* https://www.canva.com/colors/color-palettes/ */
+/* https://rgbacolorpicker.com/hex-to-rgba */
