@@ -83,18 +83,18 @@ document.querySelector('button').onclick = y;
 
 
 
-function ygn () {
-    if(document.querySelector('h1').innerHTML === "hello, ygn") {
-        document.querySelector ('h1').innerHTML = "မင်္ဂလာပါ"
-    }else {
-        document.querySelector('h1').innerHTML = "hello ygn";
-    }
+// function ygn () {
+//     if(document.querySelector('h1').innerHTML === "hello, ygn") {
+//         document.querySelector ('h1').innerHTML = "မင်္ဂလာပါ"း
+//     }else {
+//         document.querySelector('h1').innerHTML = "hello ygn";
+//     }
     
-}
+// }
 
 // ဖောင့်မှာ နာမည်ဖြည့်
 
-
+/*
 document.querySelector('#submit').disabled = true;
 
 document.querySelector('#name').onkeyup = function() {
@@ -105,11 +105,8 @@ document.querySelector('form').onsubmit = function() {
     let urName = document.querySelector('#name').value;
     alert('မင်္ဂလာပ, ${urName}');
 }
+*/
 
-
-
-// ပီး
-/*
 // li .ကို ဖျေက်ထားနည်း
 document.querySelector('#submit').disabled = true;
 
@@ -121,7 +118,7 @@ document.querySelector('#task').onkeyup = function () {
         document.querySelector('#submit').disabled = true;
     }
 }
-
+/*
     //8. အပေါ်က သုံးမယ်ဆို မလိုပါ
     // onkeyup ရေးသားနည်း
     document.querySelector('#task').onkeyup = function () {
@@ -134,8 +131,6 @@ document.querySelector('#task').onkeyup = function () {
 // = () => {
 
 // }
-
-/*
 // ၇.
 document.querySelector("form").onsubmit = function () {
     //၂. ရေးထားပီးသောစားကို သိမ်း
@@ -162,4 +157,3 @@ document.querySelector("form").onsubmit = function () {
     // submit-နိပ်လိုက်သောအခါ page refresh မလုပ်ရန်
     return false;
 }
-*/

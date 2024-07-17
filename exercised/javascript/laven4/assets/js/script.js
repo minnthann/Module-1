@@ -28,11 +28,26 @@ setInterval(y, 1000);  //1 -0
 setInterval(y, 1000);  //1-1
 */
 
-
+/*
 // var x = 0;
 // စက္ကန့်ရပ်
 
 
+if (!localStorage.getItem('mm')) {
+    localStorage.setItem('mm', 0);
+}
+function y () {
+    let mm = localStorage.getItem('x');
+        mm ++;
+
+        document.querySelector("h1").innerHTML = mm;
+        localStorage.setItem('x', mm);
+}
+
+document.querySelector('h1').innerHTML = localStorage.getItem('x');
+document.querySelector('button').onclick = q;    
+
+*/
 // တူ
 // let x = 0 ;
 
