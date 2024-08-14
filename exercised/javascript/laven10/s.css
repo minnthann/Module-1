@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 20px;
+    background-color: azure;
+}
+
+.container {
+    max-width: 600px;
+    box-shadow: 0px 2px 4px #777;
+    padding: 24px;
+    margin: 7% auto;
+    background-color: beige;
+}
+h1 {
+    color: green;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+.select {
+    display: block;
+    border: 1px solid #333;
+    margin: 20px 0;
+    padding: 12px;
+    width: 100%;
+}
+
+
+#checkStatus {
+width: 100%;
+padding: 10px 0;
+margin: 20px 0;
+
+}
+
+.result {
+    padding: 10px;
+    color: green;
+    margin-top: 20px;
+}
+
+.resulth2 {
+ color: purple;
+ border-bottom: 1px solid #777;
+ padding-bottom: 15px;
+ text-align: center;
+ margin-bottom: 20px;
+ 
+}
+.subTitle {
+color: green;
+font-weight: 500;
+}
+
+.details {
+ color: blueviolet;
+ float: right;
+}
