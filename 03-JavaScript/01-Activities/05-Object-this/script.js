@@ -1,28 +1,26 @@
-// TODO: What is `this` referring to here?
 console.log(this);
 
-// TODO: What is `this` referring to here?
-function helloThis() {
-  console.log('Inside this function, this is ' + this);
+function haythis() {
+  console.log('indise ths function, this' + this);
 }
 
-// TODO: What is `this` referring to here? What will be logged in the console?
 var child = {
-  age: 10,
+  age: 11,
   ageTenYears: function() {
-    console.log(this.age + 10);
+    console.log(this.age + 11);
   }
 };
 
-// TODO: What is `this` referring to here? What will be logged in the console?
 var investor = {
-  name: 'Cash Saver',
+  name: 'cash saver',
   investment: {
     initialInvestment: 5000,
-    investmentGrowth: function() {
+    investmentGrowth: function () {
       console.log(this.initialInvestment * 1.15);
     }
   }
 };
 
-// TODO: Call the `helloThis` function and the object methods to check results in the console
+haythis();
+child.ageTenYears();
+investor.investment.investmentGrowth();
