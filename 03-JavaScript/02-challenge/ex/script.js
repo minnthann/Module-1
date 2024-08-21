@@ -29,9 +29,11 @@ var generateBtn = document.querySelector (
   //မမှန်မချင်း ပြန်မေးပါ  မှန်လျှင် ရှေ့ဆက်ပါ while
     while (isNaN(passwordLength) || passwordLength <8 || passwordLength >128){
         alert('ဒါလေးတောင်မှန်အော်မထည့်တတ်ဘူးလား၊ ၈လုံးမှ ၁၂၈ လုံးအတွင်းရွေးပါဆိုမှ');
-        // return "";
+        return "";
         parseInt(prompt("choice 8 to 128"));
     }
+    //  || or
+    // && and
   //ထပ်ခါထပ်ခါ ပြန်မေးပါ
     if(!includeUpperCase && !includeLowerCase && includeNumber && includeSpecialCharacter) {
         alert ("ဟဲ့ကောင်စုတ်၊ တစ်ခုခုရွှေးပါဆိုမှ") 
