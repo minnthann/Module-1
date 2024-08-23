@@ -365,35 +365,107 @@ var startGame = function () {
     endGame();
 };
 
+var endGame = function() {
+    window.alert ("The game has now ended. Let's see how you did!");
 
+    var highSore = localStorage.getItem("highscore");
+    if(highSore === null) {
+        highSore = 0;
+    }
 
+    if (playerHealth.money > highSore) {
+        localStorage.setItem("highscore", playerInfo.money);
+        localStorage.setItem("name", playerInfo.name);
 
-
-var shop = function() {
-    var shopOptionPrompt = window.prompt ('Would you like to REFILL your health, UPGRADE your attack, or LEAVE the store? Pleade enter one "REFILL", "UPGRADE", or "LEAVE" to make a choice.'
-    );
-    switch (shopOptionPrompt) {
-        case 'REFILL':
-            case 'refill':
-                if(playerMoney >= 7) {
-                    window.alert("Refilling player's health by 20 for 7 dollars.");
-
-                    playerHealth = playerHealth + 20;
-                    playerMoney = playerMoney -7;
-                }else {
-                    window.alert("You don't have enouh money!");
-                }
-                break;
-                case 'LEAVE':
-                    case'leave':
-                    window.alert('Leaving the store.');
-
-                    break;
-                    default:
-                        window.alert('You did not pick a valid option. Try again.');
-
-                        shop();
-                        break;
+        alert(playerInfo.name + "now has the high score of" + playerInfo.money + "!");
+    }else {
+    alert(playerInfo.name + "did not beat the high score of " + highSore + ". Maybe next time!");
+    }
+    var playAgainConfirm = window.confirm("Would you like to play again?");
+    if (playAgainConfirm) {
+        startGame();
+    }else {
+        window.alert("Thank you for playing Robot Gladiatoirs! Come back soon!");
     }
 };
+
+var shop =function () {
+    var shipOptionPrompt = window.prompt(
+        "Would you like to REFILL your health, UPGRADE your atack, or LEAVE the store? Pleade enter one 1 for REFILL. 2 for PGRADE, or for LEAVE."
+    );
+    shipOptionPrompt = parseInt (shipOptionPrompt);
+
+    switch(shipOptionPrompt) {
+        case 1:
+            playerInfo.refillHealth();
+            break;
+        case 2:
+            playerInfo.upgradeAttack();
+            break;
+        case 3:
+            window.alert("Leaving the store.");
+            break;
+        default:
+            window.alert("You did not pick a valid option. Try again.");
+            shop();
+            break;
+    }
+};
+
+
+var getPlaterName = function() {
+    var name = "";
+    while (name === " " || name === null) {
+        name = prompt ("What is your robot's name?");
+    }
+    console.log("Your robot's name is " + name);
+    return name;
+};
+
+var playerInfo = {
+    name: getPlaterName(),
+    health: 100,
+    attack: 10,
+    money: 10,
+    reset: function() {
+        this.health = 100;
+        this.money = 10;
+        this.attack= 10;
+    },
+    refillHealth: function() {
+        if (this.money >= 7) {
+            window.alert("Refilling player's health by 20 for 7 dollars.");
+            this.health += 20;
+            this.money -=7;
+        }else {
+            window.alert ("You don't have enough money!");
+        }
+    },
+    upgradeAttack: function() {
+        if (this.money >= 7 ) {
+            window.alert("Upgrading player's attack by 6 for 7 dollars.");
+            this.attack += 6;
+            this.money -= 7;
+        }else {
+            window.alert("You don't have enoi!");
+        }
+    }
+};
+
+var enemyInfo = [
+    {
+        name:"Roborto",
+        attack:randomNumber(10, 14)
+    },
+    {
+        name: "Amy Android",
+        attack: randomNumber(10, 14)
+    },
+    {
+        name: "Robo Trumble",
+        attack: randomNumber(10, 14)
+    }
+];
+
+
 startGame();
