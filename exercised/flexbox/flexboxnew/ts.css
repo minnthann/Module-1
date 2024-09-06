@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    background-color: rgba (244, 238, 238, 0.59);
+}
+
+.container {
+    margin: 20px;
+    background-color: lightcyan;
+    border: 1px solid #777;
+    height: 200px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.task {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+}
+
+.item{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px #777;
+    background-color: tomato;
+    text-align: center;
+
+}
+
+/* flex သဘောက ညာကစ row */
+/* task 1 */
+.task-1, .container {
+    display: flex;
+    /* flex-direction: row; */
+
+}
+/* task 2 */
+.task-2.container{
+    display: flex;
+    justify-content: center;
+    /* columns cnter */
+    align-items: center;
+    /* roe canter */
+}
+
+/* task 3 */
+/* nav  အတွက်သုံး */
+.task-3.container{
+    display: flex;
+    justify-content: space-between;
+    /* between headerအသုံးပြု around နဘေးအကုန်ညီ evenly အညီအမျှ  */
+    align-items: center;
+
+}
+
+.sm {
+ width: 20px;
+}
+.lg {
+    width: 90px;
+}
+
+/* task4 */
+.task-4.option-1 .container{
+    display: flex;
+    justify-content: space-between;
+}
+.task-4.option-2 .container{
+    display: flex;
+}
+.task-4.option-2 .space{
+    flex-grow: 1;
+/* ရှိတဲ့ နေရာယူ */
+/* flex-shrink: 1; */
+/* အတွင်းသေး */
+
+}
+.task-4.option-3 .container{
+    display: flex;
+}
+.task-4.option-3 .item:first-child{
+    flex-grow: 1;
+}
+
+/* task 5 */
+.task-5.container{
+    display: flex;
+}
+
+.task-5.item-1{
+    flex: 1;
+    /*  1 0 0 grow 0 1 0 -shrink basis */
+}
+.task-5.item-2{
+    flex: 1;
+    /*  1 0 0 grow 0 1 0 -shrink basis */
+}
+.task-5.item-3{
+    flex: 1;
+    /*  1 0 0 grow 0 1 0 -shrink basis */
+}
+.task-5.item-4{
+    flex: 1;
+    /*  1 0 0 grow 0 1 0 -shrink basis */
+}
+
+/* task 6 */
+
+.task-6 .container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+/* .task-6 .item {
+    width: 50%;
+} */
+
+@media (min-width: 370px) {
+    .task-6 .item {
+        display: flex;
+        width: 25%;
+    }
+}
+@media (min-width: 900px) {
+    .task-6 .item {
+        display: flex;
+        width: 50%;
+    }
+}
+
+/* task 7 */
+.task-7 .container {
+    display: flex;
+}
+.task-7 .item-1 {
+    order: 1;
+    /* -1 အစဥ်တိုင်း ၁ ဆို နောက်ကနေစ */
+}
+.task-7 .item-2 {
+    order: 1;
+    /* -1 အစဥ်တိုင်း ၁ ဆို နောက်ကနေစ */
+}
+
+/* task 8 */
+.task-8 .container {
+    display: flex;
+}
+.task-8 .item-3 {
+    align-self: flex-end;
+    order: -1;
+    
+}
+/* flex-cad
+flex-end
+flex- */
