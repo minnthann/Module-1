@@ -15,3 +15,16 @@ if (exp1 && exp2) {
 } else {
   console.log('False False ');
 }
+
+
+var x = prompt("Choose Your Number");
+var y;
+if (x === 29) {
+  y = "Got it!";
+} else if (x < 29) {
+  y = "Less than";
+} else if (x > 29) {
+  y = "Greater than";
+} else {
+  y = "None of";
+}

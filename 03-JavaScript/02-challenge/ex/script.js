@@ -42,13 +42,13 @@ var generateBtn = document.querySelector (
     }
     let availableChar = "";
     if (includeUpperCase) {
-        availableChar += 'ABCDEF';
+        availableChar += 'ကခဂဃငစဆဇစျည';
     }if (includeLowerCase){
-        availableChar += 'abcdef';
+        availableChar += 'ပဖဗဘမယရလဝသဟ';
     }if (includeNumber){
-        availableChar += '12345';
+        availableChar += '၁၂၃၄၅၆၇၈၉';
     }if (includeSpecialCharacter){
-        availableChar += 'ဣဤ၍ဪ';
+        availableChar += 'အအာဣဤ၍ဪ';
     }
     let password = "";
     for (let i=0; i<passwordLength; i++){
